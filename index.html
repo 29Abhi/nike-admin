@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #form_container{
+        /* border: 1px solid black; */
+        width: 400px;
+        height: 500px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: auto;
+      }
+      #product_form{
+       padding: 100px 80px;
+      }
+      input{
+        padding: 10px 20px;
+        font-size: large;
+      }
+      #submit{
+        padding: 10px 10px;
+        font-size: large;
+      }
+      #show_products{
+        padding: 10px 10px;
+        font-size: large;
+        border-radius: 7px;
+      }
+
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="menu">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+      <a href="./inventory.html" ><button id="show_products">Show Products</button></a>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      
+      <!--Create a form here to accept product data from user, give form HTML id as "product_form"-->
+
+      <!--Create four inputs to accept brand, name, price, image and brand-->
+      <!--give the inputs following respective id's, "product_brand", "product_name", "product_price","product_image"-->
+      <!--create a submit option to submit form, give it html id as "submit"-->
+      <div id="form_container">
+      <form id="product_form" onsubmit="addadata(event)">
+        <input id="product_brand" placeholder="Enter Brand" type="text">
+        <br><br>
+        <input id="product_name" placeholder="Enter Name of product"   type="text">
+        <br><br>
+        <input id="product_price" placeholder="Enter price"  type="price"> 
+        <br><br>
+        <input id="product_image" placeholder="Enter image url"  type="url">
+        <br><br>
+      <button id="submit" type="submit" >Submit</button>
+      </form>
+    </div>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
